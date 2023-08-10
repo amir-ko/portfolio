@@ -1,0 +1,570 @@
+#main {
+  width: 100%;
+  font-family: "Amatic SC", cursive;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: #373B40;
+}
+#main > section {
+  background-color: #373b40;
+  position: relative;
+}
+#main > section > .head-top {
+  height: 80px;
+  background-color: #585D65;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  border-radius: 50px;
+  z-index: 1;
+  display: flex;
+  z-index: 100;
+  flex-wrap: nowrap;
+}
+@media screen and (max-width: 1200px) {
+  #main > section > .head-top {
+    background-color: transparent;
+  }
+}
+#main > section > .head-top > figure {
+  display: flex;
+  cursor: pointer;
+}
+#main > section > .head-top > figure > img {
+  width: 100px;
+  height: 80px;
+  margin-left: 5px;
+}
+#main > section > .head-top > figure h2 {
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 30px;
+  line-height: 1;
+  margin-top: 25px;
+}
+#main > section > .head-top > nav:nth-of-type(1) {
+  flex-wrap: wrap;
+  margin-left: 5px;
+}
+#main > section > .head-top > nav:nth-of-type(1) > ul {
+  justify-content: end;
+  align-items: center;
+  list-style-type: none;
+}
+#main > section > .head-top > nav:nth-of-type(1) > ul > li {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin-top: 20px;
+  margin-right: 10px;
+  align-items: center;
+}
+#main > section > .head-top > nav:nth-of-type(1) > ul > li > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  transition: 0.4s ease-in-out;
+}
+#main > section > .head-top > nav:nth-of-type(1) > ul > li > a:hover {
+  color: #68e0cf;
+}
+#main > section > .head-top > nav:nth-of-type(1) > ul > li:nth-of-type(1) > a {
+  color: #63D5C7;
+}
+#main > section > .head-top > nav:nth-of-type(2) {
+  background-color: transparent;
+  position: relative;
+}
+#main > section > .head-top > nav:nth-of-type(2) > li {
+  list-style: none;
+  height: 100%;
+}
+#main > section > .head-top > nav:nth-of-type(2) > li:hover > ul {
+  height: 300px;
+}
+#main > section > .head-top > nav:nth-of-type(2) > li > a {
+  color: rgb(240, 240, 240);
+  font-size: 40px;
+  text-decoration: none;
+}
+#main > section > .head-top > nav:nth-of-type(2) > li ul {
+  display: flex;
+  position: absolute;
+  background-color: rgba(55, 59, 64, 0.3568627451);
+  top: 50px;
+  right: 5%;
+  width: 900px;
+  overflow: hidden;
+  height: 0;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 1s ease-in-out;
+}
+@media screen and (max-width: 576px) {
+  #main > section > .head-top > nav:nth-of-type(2) > li ul {
+    width: 250%;
+    top: 80px;
+  }
+}
+#main > section > .head-top > nav:nth-of-type(2) > li ul > li {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#main > section > .head-top > nav:nth-of-type(2) > li ul > li > a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+}
+#main > section > .head-top > nav:nth-of-type(2) > li ul > li > a:hover {
+  color: #65DAC9;
+}
+#main > section > .head-top > a {
+  display: flex;
+  align-items: center;
+  padding-left: 45px;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+  font-size: 20px;
+  height: 70px;
+  margin-top: 5px;
+  margin-left: -10px;
+  transition: 0.4s ease-in-out;
+}
+#main > section > .head-top > a i {
+  margin-left: 10px;
+}
+#main > section > .head-top > a:hover {
+  color: #68e0cf;
+  border: 1px solid #68e0cf;
+}
+#main > section > div {
+  justify-content: end;
+  position: relative;
+}
+#main > section > div > .back {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-image: url(../img/IMG_0064.JPG);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+@media screen and (max-width: 992px) {
+  #main > section > div > .back {
+    height: 500px;
+    position: static;
+    top: 0;
+    left: 0;
+  }
+}
+#main > section > div > section {
+  z-index: 99;
+  background-color: #373b40;
+}
+@media screen and (min-width: 992px) {
+  #main > section > div > section {
+    margin-right: 116px;
+  }
+}
+#main > section > div > section > header {
+  height: 100vh;
+  position: relative;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  border-bottom: 1px solid white;
+}
+#main > section > div > section > header > h1 {
+  width: 300px;
+  height: 400px;
+  background-color: #373b40;
+  word-break: break-word;
+  font-weight: 800;
+  border-radius: 264px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 100px;
+  left: -200px;
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  padding-left: 10px;
+}
+@media screen and (max-width: 992px) {
+  #main > section > div > section > header > h1 {
+    position: absolute;
+    top: -20%;
+    left: 15%;
+    text-align: center;
+    font-size: 70px;
+  }
+}
+#main > section > div > section > header > div {
+  flex-wrap: wrap;
+  border: 1px solid #373B40;
+}
+#main > section > div > section > header > div > p {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  z-index: 10;
+}
+#main > section > div > section > header > div > a {
+  width: 190px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  z-index: 3;
+  margin-bottom: 10px;
+  font-size: 30px;
+  border-radius: 50px;
+  height: 80px;
+  transition: 0.4s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  #main > section > div > section > header > div > a {
+    margin-top: 250px;
+    margin-left: 150px;
+  }
+}
+#main > section > div > section > header > div > a > i {
+  margin-left: 10px;
+}
+#main > section > div > section > header > div > a:hover {
+  color: #63D5C7;
+  border: 1px solid #63D5C7;
+}
+#main > section > div > section .about {
+  padding: 50px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+#main > section > div > section .about h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+#main > section > div > section .about span {
+  color: #68E0CF;
+  font-size: 30px;
+  font-weight: 600;
+  width: 100%;
+}
+#main > section > div > section .about p {
+  color: white;
+  font-size: 25px;
+  text-align: justify;
+}
+#main > section > div > section .about > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main > section > div > section .about > div:nth-of-type(1) {
+  height: 250px;
+}
+#main > section > div > section .about > div > span {
+  text-transform: capitalize;
+}
+#main > section > div > section .about > div > span > strong {
+  color: white;
+}
+#main > section > div > section .code {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+#main > section > div > section .code > .card {
+  margin-top: 10px;
+  width: 100%;
+  background-color: #373B40;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+#main > section > div > section .code > .card > .header {
+  background-color: #585D65;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+}
+#main > section > div > section .code > .card > .body {
+  padding: 20px;
+}
+#main > section > div > section .code > .card > .body > .skill {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#main > section > div > section .code > .card > .body > .skill > p {
+  color: white;
+  font-size: 20px;
+  width: 50%;
+  text-align: justify;
+}
+#main > section > div > section .code > .card > .body > .skill > .skill-name {
+  width: 80px;
+  font-size: 20px;
+  color: #63D5C7;
+  padding-left: 20px;
+  font-weight: bold;
+}
+#main > section > div > section .code > .card > .body > .skill > .skill-level {
+  width: 160px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 20px;
+}
+#main > section > div > section .code > .card > .body > .skill > .skill-level > .skill-percent {
+  background-color: #64D1C3;
+  height: 100%;
+}
+#main > section > div > section .code > .card > .body > .skill > .skill-percent-number {
+  margin-left: 20px;
+  font-size: 25px;
+  color: #64D1C3;
+}
+#main > section > div > section .portfolio {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-top: 1px solid white;
+}
+#main > section > div > section .portfolio > div {
+  height: 280px;
+  margin-top: 30px;
+}
+#main > section > div > section .portfolio > div > figure {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#main > section > div > section .portfolio > div > figure > img {
+  width: 275px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s ease-in-out;
+  border-radius: 10px;
+}
+#main > section > div > section .portfolio > div > figure > img:hover {
+  box-shadow: 0px 0px 30px 1px rgba(255, 255, 255, 0.6);
+}
+#main > section > div > section .portfolio > div > figure > figcaption {
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#main > section > div > section .portfolio > div > figure > figcaption > a {
+  text-decoration: none;
+  width: 100%;
+  font-size: 20px;
+  color: white;
+  margin-top: 5px;
+  transition: 0.2s ease-in-out;
+}
+#main > section > div > section .portfolio > div > figure > figcaption > a:hover {
+  color: #64D1C3;
+}
+#main > section > div > section .portfolio > div > figure > figcaption > a:nth-of-type(2) i {
+  color: black;
+}
+#main > section > div > section .portfolio > div:nth-of-type(1) {
+  height: 50px;
+  margin-bottom: 50px;
+}
+#main > section > div > section .portfolio > div:nth-of-type(1) > h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+}
+#main > section > div > section .portfolio > div:nth-of-type(1) > span {
+  color: #65DAC9;
+  font-size: 30px;
+}
+#main > section > div > section .form {
+  border-top: 1px solid white;
+}
+#main > section > div > section .form > .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+#main > section > div > section .form .contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+  flex-direction: column;
+  gap: 35px;
+  border-radius: 15px;
+  background: #373B40;
+  box-shadow: -16px -16px 32px rgba(104, 224, 208, 0.4941176471);
+  border-radius: 8px;
+}
+#main > section > div > section .form .contact > .singup {
+  color: #65DAC9;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  font-weight: bold;
+  font-size: 30px;
+  text-decoration: none;
+  margin-top: 1.5em;
+}
+#main > section > div > section .form .contact .inputBox,
+#main > section > div > section .form .contact .inputBox1 {
+  position: relative;
+  width: 250px;
+}
+#main > section > div > section .form .contact .inputBox input,
+#main > section > div > section .form .contact .inputBox1 input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  background: transparent;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transition: 0.1s;
+  border-bottom-left-radius: 8px;
+}
+#main > section > div > section .form .contact .inputBox span,
+#main > section > div > section .form .contact .inputBox1 span {
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-4px);
+  margin-left: 10px;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  letter-spacing: 3px;
+  border-radius: 8px;
+}
+#main > section > div > section .form .contact .inputBox input:valid ~ span,
+#main > section > div > section .form .contact .inputBox input:focus ~ span {
+  transform: translateX(113px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #68E0CF;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+#main > section > div > section .form .contact .inputBox1 input:valid ~ span,
+#main > section > div > section .form .contact .inputBox1 input:focus ~ span {
+  transform: translateX(156px) translateY(-15px);
+  font-size: 0.8em;
+  padding: 5px 10px;
+  background: #68E0CF;
+  letter-spacing: 0.2em;
+  color: #fff;
+  border: 2px;
+}
+#main > section > div > section .form .contact .inputBox input:valid,
+#main > section > div > section .form .contact .inputBox input:focus,
+#main > section > div > section .form .contact .inputBox1 input:valid,
+#main > section > div > section .form .contact .inputBox1 input:focus {
+  border: 2px solid #000;
+  border-radius: 8px;
+}
+#main > section > div > section .form .contact .send {
+  height: 45px;
+  width: 120px;
+  border-radius: 5px;
+  border: 2px solid #000;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.5s ease-in-out;
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 2px;
+  margin-bottom: 3em;
+}
+#main > section > div > section .form .contact .send:hover {
+  border: 1px solid #65DAC9;
+  color: white;
+}
+#main > section > div > section .form .name {
+  flex-wrap: wrap;
+  padding-left: 10px;
+}
+#main > section > div > section .form .name > h2 {
+  font-size: 30px;
+  color: #63D5C7;
+  width: 100%;
+}
+#main > section > div > section .form .name > span {
+  font-size: 25px;
+  display: flex;
+  color: #63D5C7;
+}
+#main > section > div > section .form .name > span > strong {
+  color: white;
+  margin-left: 10px;
+}
+#main > section > div > section .form .name h3 {
+  color: #64D1C3;
+  font-family: "Pacifico", cursive;
+}
+#main > section > div > section p {
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+#main > section > div > section p > span {
+  color: #63D5C7;
+}
+#main > section > div .icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: end;
+  border-left: 1px solid white;
+  flex-direction: column;
+  padding-bottom: 20px;
+  background-color: #373B40;
+}
+#main > section > div .icon > a {
+  font-size: 20px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 54px;
+  width: 54px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  transition: 0.4s ease-in-out;
+}
+#main > section > div .icon > a:hover {
+  color: #63D5C7;
+}/*# sourceMappingURL=master.css.map */

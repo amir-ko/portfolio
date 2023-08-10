@@ -1,6 +1,5 @@
 # Template By Html & Css &Scss 
 
-**If you have a lot of information to display on your site, why don't you use my accordion menu**
 ![a](https://github.com/amir-ko/portfolio/assets/119657835/dada8e85-2a26-470b-b8a2-39e507094c64)
 
 ![b](https://github.com/amir-ko/portfolio/assets/119657835/bb5626b6-0afc-458b-a9a7-a4557da3d8ca)
